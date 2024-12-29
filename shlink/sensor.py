@@ -4,14 +4,23 @@ import requests
 
 from . import DOMAIN
 
+async def async_setup_entry(hass, entry, async_add_entities):
+    """Set up Shlink sensor from a config entry."""
+    base_url = entry.data[CONF_BASE_URL]
+    api_key = entry.data[CONF_API_KEY]
+    update_interval = entry.options.get("update_interval", 60)
+
+    async_add_entities([ShlinkSensor("Shlink URLs", base_url, api_key, update_interval)], True)
+
 class ShlinkSensor(SensorEntity):
     """Representation of a Shlink sensor."""
 
-    def __init__(self, name, base_url, api_key):
+    def __init__(self, name, base_url, api_key, update_interval):
         self._name = name
         self._base_url = base_url
         self._api_key = api_key
         self._state = None
+        self._update_interval = update_interval
 
     @property
     def name(self):
