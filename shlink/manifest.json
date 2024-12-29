@@ -1,7 +1,7 @@
 {
   "domain": "shlink",
-  "name": "Shlink Integration",
-  "version": "1.0.0",
+  "name": "Shlink",
+  "version": "0.0.1",
   "documentation": "https://www.example.com",
   "requirements": ["requests"],
   "dependencies": [],
