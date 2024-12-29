@@ -1,0 +1,16 @@
+{
+  "title": "Shlink",
+  "step": {
+    "user": {
+      "title": "Shlink einrichten",
+      "description": "Verbinde dich mit deiner Shlink-Instanz.",
+      "data": {
+        "base_url": "Basis-URL",
+        "api_key": "API-Schlüssel"
+      }
+    }
+  },
+  "error": {
+    "cannot_connect": "Verbindung zur API nicht möglich"
+  }
+}
