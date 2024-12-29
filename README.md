@@ -1,6 +1,6 @@
 # Shlink - Home Assistant Integration
 
-## Instal
+## Install
 
 ## Setup
 
