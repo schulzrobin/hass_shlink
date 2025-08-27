@@ -1,0 +1,9 @@
+{
+  "domain": "shlink",
+  "name": "Shlink",
+  "codeowners": ["@you"],
+  "documentation": "https://shlink.io/documentation/api-docs/",
+  "iot_class": "cloud_polling",
+  "version": "0.1.0",
+  "requirements": []
+}
